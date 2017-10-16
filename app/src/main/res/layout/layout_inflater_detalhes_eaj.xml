@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textNomeLocalInflar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOME"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLocalInflar"
+            android:background="#999"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textDescricaoLocalInflar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NESSE TEXT VIEW ESTARÁ PRESENTE UMA BREVE DESCRIÇÃO SOBRE  OS PRINCIPAIS LOCAIS DA ESCOLA AGRICOLA DE JUNDIAI, ENTÃO ESSE TEXTO TERÁ UM ID PARA SER SETADO ISSO DINAMENICAMENTE"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textHorarioLocalInflar"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Horario"/>
+        <TextView
+            android:id="@+id/textResponsavelLocalInflar"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RESPONSAVEL"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
