@@ -2,38 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
-
-    <TextView
-        android:id="@+id/textNomeLocalInflar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NOME"/>
-
+    
     <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/imgLocalInflar"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_weight="3"
-            android:background="#999" />
+        android:layout_height="0dp">
+        adryel.juliao
         <TextView
-            android:layout_weight="7"
-            android:id="@+id/textDescricaoLocalInflar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="NESSE TEXT VIqwewqewqewqeqweqweqweqwewqewqewqewqewqewqewqewqewqewqewqewqewqewqEW ESTARÁ PRESENTE UMA BREVE DESCRIÇÃO SOBRE  OS PRINCIPAIS LOCAIS DA ESCOLA AGRICOLA DE JUNDIAI, ENTÃO ESSE TEXTO TERÁ UM ID PARA SER SETADO ISSO DINAMENICAMENTE" />
 
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="NOME"
+            />
+        <android.support.v4.view.ViewPager
+            android:layout_weight="8.5"
+            android:layout_gravity="center"
+            android:background="#999"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
+        </android.support.v4.view.ViewPager>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:background="#080808"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:text="DESCRIÇÃO"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEXTO DE DESCRICAO"/>
+    </LinearLayout>
 
 </LinearLayout>

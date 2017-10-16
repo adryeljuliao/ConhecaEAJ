@@ -6,58 +6,54 @@
 
 
     <TextView
+        android:layout_weight="1"
         android:id="@+id/textNomeLocalInflar"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="NOME"/>
 
+    <ImageView
+        android:id="@+id/imgLocalInflar"
+        android:background="#999"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:layout_width="200dp"
+        android:layout_height="0dp"/>
+
     <LinearLayout
+        android:layout_weight="4"
         android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imgLocalInflar"
-            android:background="#999"
-            android:layout_gravity="center"
-            android:layout_weight="3"
-            android:layout_width="0dp"
-            android:layout_height="100dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <LinearLayout
-            android:padding="10dp"
-            android:layout_weight="7"
-            android:layout_gravity="center"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textDescricaoLocalInflar"
+                    android:layout_weight="9.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
 
-            <TextView
-                android:id="@+id/textDescricaoLocalInflar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="NESSE TEXT VIEW ESTARÁ PRESENTE UMA BREVE DESCRIÇÃO SOBRE  OS PRINCIPAIS LOCAIS DA ESCOLA AGRICOLA DE JUNDIAI, ENTÃO ESSE TEXTO TERÁ UM ID PARA SER SETADO ISSO DINAMENICAMENTE"/>
-
-
-
-        </LinearLayout>
-
+                <View
+                    android:layout_weight="0.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#d90d0d"/>
+            </LinearLayout>
 
     </LinearLayout>
-    <View
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#999"/>
 
     <LinearLayout
         android:padding="10dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal">
 
         <TextView
@@ -65,16 +61,22 @@
             android:layout_weight="5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Horario"/>
+            android:text="Horario: 10h - 13h"/>
+
         <TextView
             android:id="@+id/textResponsavelLocalInflar"
             android:layout_weight="5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="RESPONSAVEL"/>
+            android:text="Responsável: Luiz Fernando"/>
     </LinearLayout>
-
-
-
+    <ImageView
+        android:src="@android:drawable/ic_menu_mapmode"
+        android:layout_margin="10dp"
+        android:id="@+id/imgMapaLocalInflar"
+        android:layout_gravity="center|right"
+        android:layout_weight="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"/>
 
 </LinearLayout>
